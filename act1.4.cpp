@@ -82,7 +82,7 @@ int convertirMes(const char* mesStr) {
 }
 
 int leerDatos(Restaurante datos[], int n){
-    ifstream input_file("pordenes.txt");
+    ifstream input_file("orders.txt");
     if(!input_file.is_open()) {
         cout << "Error: file cannot be opened" << endl;
         return 0;
