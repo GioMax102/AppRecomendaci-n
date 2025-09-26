@@ -164,7 +164,7 @@ void mostrarPrimeros10Datos(Restaurante restaurantes[], int totalRestaurantes) {
 }
 
 int main(){
-    Restaurante restaurantes[1000];
+    Restaurante restaurantes[10000];
     int n_res = leerDatos(restaurantes, n_res);
     if(n_res == 0){ return 0; }
     mostrarPrimeros10Datos(restaurantes, n_res);
