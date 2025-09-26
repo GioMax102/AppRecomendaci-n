@@ -1,14 +1,7 @@
-#include <iostream>
-#include <fstream>
-using namespace std;
+#include "Menu.hpp"
 
-
-int main(){  
-  ifstream input_file("pordenes.txt");
-  if(!input_file.is_open()){
-      cout <<"Error: file cannot be opened" << endl;
-      return 1;
-  }
-
-  return 0;
+int main() {
+    Menu menu;
+    menu.mostrar();
+    return 0;
 }
