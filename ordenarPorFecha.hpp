@@ -15,7 +15,7 @@ inline int partitionEnd(Orden* A, int l, int r) {
         }
     }
     swapOrden(A[i+1], A[r]);
-    return i+1; // posición final del pivote
+    return i+1; 
 }
 
 

@@ -56,14 +56,16 @@ private:
 
 
     static int claveDesde(int mes, int dia, int h, int m, int s) {
-    // Usamos meses de 28 días para conseguir una cronología simple y estable
+
+    // Usamos meses de 28 días para conseguir una cronología simple
+
     return s + m*60 + h*3600 + dia*24*3600 + mes*28*24*3600;
     }
 
 
 public:
     Orden() { mes_[0]='\0'; }
-    // Cargar desde tokens ya extraídos (char*)
+    // Cargar desde tokens ya extraídos 
     void setFromTokens(const char* mes, const char* dia, const char* hora,
                         const char* minuto, const char* segundo,
                         const char* restaurante, const char* platillo,
@@ -74,6 +76,7 @@ public:
     hora_ = toInt(hora);
     minuto_ = toInt(minuto);
     segundo_ = toInt(segundo);
+    
     // ignoramos R antes del nomnre del restaurante y O antes del platillo,
     // pero por simplicidad asumimos que el token ya viene limpio.
     copyStr(restaurante_, restaurante, 64);
@@ -83,7 +86,7 @@ public:
     claveSeg_ = claveDesde(mesInt_, dia_, hora_, minuto_, segundo_);
 }
 
-    // Getters sencillos
+    // Getters
     const char* mes() const { return mes_; }
     int dia() const { return dia_; }
     int hora() const { return hora_; }

@@ -49,7 +49,7 @@ public:
             // Procesar la opción elegida
             switch (opcion) {
                 case 1: {
-                    // Limpiamos memoria si ya había datos
+                    // Limpiamos memoria por si habia datos
                     delete[] datos;
                     datos = nullptr;
                     numOrdenes = 0;

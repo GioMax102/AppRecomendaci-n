@@ -2,7 +2,6 @@
 #include <fstream>
 #include <iostream>
 #include <cstdio>    // esta libreria es para poder usar sscanf y sprintf
-#include <cstring>   // esta libreria es para usar strlen
 #include "Orden.hpp"
 
 // Esta función cuenta cuántas líneas tiene el archivo

@@ -33,7 +33,10 @@ inline int buscarFin(const Orden* A, int n, int target) {
 
 
 inline void mostrarRango(const Orden* A, int i, int j) {
-    if (i>j) { std::cout << "(sin resultados)\n"; return; }
+    if (i>j) {
+        std::cout << "(sin resultados)\n"; 
+        return; 
+    }
     for (int k=i; k<=j; ++k) {
         std::cout << (k+1) << ". " << A[k].mes() << ' ' << A[k].dia() << ' '
                 << A[k].hora() << ':' << A[k].minuto() << ':' << A[k].segundo()
